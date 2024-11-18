@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .img{
+     
+      width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     margin-right: 10px;
+
+    }
+    .card {
+  width: 600px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  text-decoration: solid;
+}
+
+/* .card-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+} */
+
+.card-header h4 {
+  margin: 0;
+}
+
+.card-content {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-content p {
+  margin-bottom: 10px;
+}
+
+.quote-icon {
+  font-size: 30px;
+  color: #777;
+    margin-left: 10px
+  }
+  .gallery{
+      margin: auto;
+      display: flex; 
+      height: 500px;
+      gap: 10px;
+          }
+  .left{
+    display: grid;
+     grid-template-columns: repeat(4, 300px);
+    gap: 10px;
+            }
+            .purple{
+                width: 80%;
+                background-color: purple;
+                grid-column: span 2;
+
+            }
+            .blue{
+              height: 250px;
+                width: 60%;
+                background-color: rgba(128, 128, 128, 0.099);
+                -ms-grid-row-span: 1;
+            }
+            .grey{
+                width: 40%;
+                background-color: gray;
+                grid-column: 2/4;
+            }
+            .right{
+                background-color: rgb(3, 29, 3);
+                display: flex;
+                width: 300px;
+                height: 100%;
+                float: right;
+            }
+            /* .card{
+                height: 250px;
+            } */
+
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="left">
+        <div class="purple card">
+         <header><img src="./images/image-daniel.jpg" class="img">Daniel Clifford<br> 
+          Verified Graduate</header>
+        
+          <p>I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+          in the company I joined. I honestly feel I got every penny’s worth.
+        
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+          transition and have heard some people who had an amazing experience here. I signed up 
+          for the free intro course and found it incredibly fun! I e
+          nrolled shortly thereafter. 
+          The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+          the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+        </div>
+        <div class="white card">
+         <header><img src="./images/image-jonathan.jpg" class="img"> Jonathan Walters<br>
+         Verified Graduate</header>
+
+          <p>The team was very supportive and kept me motivated
+
+         “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+         for a big company. This was one of the best investments I’ve made in myself. ”</p>
+          
+        </div>
+        <div class="blue card">
+         <header><img src="./images/image-patrick.jpg" alt="" class="img">Patrick Abrams<br>
+          Verified Graduate</header>
+        
+          <p>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+          learning from their experiences was easy.
+          “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+          gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+         junior developer. The standard is above the rest. You will get the personal attention you need from 
+         an incredible community of smart and amazing people. ”
+        </p>
+        </div>
+        <div class="grey card">
+          <header><img src="./images/image-kira.jpg" alt="" class="img">Kira Whittle<br> 
+            Verified Graduate</header>
+          
+            Such a life-changing experience. Highly recommended!
+          
+            “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+            professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+            student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+            did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+            project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+            could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+            experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+            100% recommend! ”</div>!
+        </div>
+    </div>
+    <div class="right">
+      <header><img src="./images/image-kira.jpg" alt="" class=""  class="img">Kira Whittle<br> 
+        Verified Graduate</header>
+      
+        Such a life-changing experience. Highly recommended!
+      
+        “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+        professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+        student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+        did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+        project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+        could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+        experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+        100% recommend! ”</div>
+    </div>
+ </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

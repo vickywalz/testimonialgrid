@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .gallery{
+            margin: auto;
+            display: flex;
+            height: 600px;
+            gap: 15px;
+            border-radius: 30px;
+         }
+         .img{            
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+         }
+         .left{
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            gap: 15px;
+            border-radius: 10px;
+            padding: 10px;
+         }
+         .purple{
+            width: 100%;
+            min-height: 100%;
+            background-color: hsl(263, 55%, 52%);
+            grid-column: span 2;
+            border-radius: 10px;
+            color: white;
+         }
+         .blue{
+            width: 100%;
+            background-color: hsla(0, 0%, 100%, 0.545);
+            border-radius: 10px;
+         }
+         .green{
+            width: 100%;
+            min-height: 100%;
+            background-color: hsl(217, 19%, 35%);
+            border-radius: 10px;
+            color: white;
+         }
+         .grey{
+            width: 100%;
+            min-height: 100%;
+            background-color: hsl(219, 29%, 14%);
+            grid-column: 2 / 4;
+            border-radius: 10px;
+            color: rgba(255, 255, 255, 0.494);
+            background-color: rgb(12, 7, 7);
+         }
+         .right{
+            background-color: hsl(0, 7%, 94%);
+            width: 300px;
+            height: 100%;
+            border-radius: 10px;
+         }
+         .card{
+            height: 25px;
+            padding: 2px;
+         }
+         .card img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-bottom: 7px;
+            margin-top: 4px;
+            margin-left: 5px;
+         }
+         @media(max-width: 680px){
+            .gallery{
+               flex-direction: column;
+            }
+            .left{
+               display: flex;
+               flex-direction: column-reverse;
+            }
+         }
+         .go{
+            font-size: 15px;
+            font-weight: 900;
+            font-style: italic;
+            text-align:start ;
+            margin-left: 7px;
+         }
+         h1, h2, h3, h4{
+            margin-left: 5px;
+            font-weight: 500;
+         }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <div class="left">
+            <div class="purple card">
+               <div>
+                  <img src="./images/image-daniel.jpg">
+                   <h2>Daniel Clifford<br> <span style="color: gray;text-align: justify;">Verified Graduate</span></h2>
+                  </div>
+                  <div>
+                     <p>
+                        <p class="go">
+                           I received a job offer mid-course, and the subjects i learned<br> were current, if not more so,
+                           in the company i joined. I<br>honestlty feel i got every penny`s worth.
+                           </p>
+                           <p style="color: gainsboro; margin-left: 7px;">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid dolorem rerum ea quas animi optio, et, vitae, in laborum doloribus veritatis eius? Dicta corporis officia impedit commodi reprehenderit tempora sit culpa enim ratione omnis aliquam, 
+                              excepturi atque voluptates, eaque soluta, dolore aut quibusdam? Earum incidunt totam debitis, obcaecati rerum dignissimos.
+                              </p>
+                     </p>
+                  </div>
+               </div>
+        <div class="green card">
+         <div>
+            <img src="./images/image-jonathan.jpg"> 
+            <h2>Jonathan Walters<br><span style="color: gray;text-align: justify;">Verified Graduate</span></h2>
+            <p class="go">
+               The team was very<br> supportive and kept me<br> motivated
+               </p>
+               <p style="color: gainsboro; margin-left: 7px;">
+               - I started as a total newbie with virtually<br>no coding skills. I now work<br> as a mobile engineer for a big<br> company. This was one of the best<br> investment i have made in myself."
+                  </p>
+            </div>
+         </div>
+        <div class="blue card">
+         <img src="./images/image-jeanette.jpg"> 
+          <h2>Jeanette Harmon<br><span style="color: gray;">Verified Graduate</span></h2>
+         <p class="go">
+            An overall wonderfull<br> and rewarding<br> experience
+            </p>
+            <p style="color: darkgray; margin-left: 7px;">
+               -Thank you for the wonderfull<br> experience! I now have a job i really<br> enjoy, and make a good living while<br> doing something i love."
+               </p>
+         </div>
+        <div class="grey card">
+         <img src="./images/image-patrick.jpg"> 
+         <h2> Patrick Harmon<br><span style="color: gray;">Verified Graduate</span></h2>
+         <p class="go">
+           Awesome teaching support from TAs who did the bootcamp<br>themselves. Getting Guidance from them and learning from<br> their experiences was easy.
+         </p>
+         <p style="color: darkgrey; margin-left: 7px;">
+            The staff seem genuinely concerned about my progress which i find really refreshing. The<br> program gave me the confidence necessary to be able to go out in the world and present<br> myself as a capable junior developer. The standard is above the rest. You will get the<br> personal attention you need from an incredible community of smart and amazing people."
+         </p>
+        </div>
+        </div>
+        <div class="right">
+         <div class="image">
+            <img src="./images/image-kira.jpg" style="border-radius: 50%; margin-top: 7px; margin-left: 7px==;">
+            <h2>Kira Whittle<br><span style="color: gray;">Verified Graduate</span></h2>
+            <p class="go">
+               Such a life-changing<br> experience. Highly<br> recommended!
+            </p>
+            <p style="color: darkcyan; margin-left: 7px;">
+               Before joining the bootcamp, i have<br> never written a line of code. I needed<br> some structure from professionals<br> who can help me learn programming<br> step bt step. I was encouraged to<br> enroll by a former student of theirs<br> who can only say wonderfull things<br> about the program. The entire<br> curriculum and staff did not<br> disappoint. They were very hands-on<br> and i never had to wait long for<br> assistance. The agile team project, in<br> particular, was outstanding. It took<br> my leaning to the next level in a way<br> that no tutorial could ever have. In<br> fact, I have often referred to it during<br> interviews as an example of my<br> developent experience. It certainly<br> helped me land my job as a full-stack<br> developer after receiving multiple<br> offers. 100% recommend!"  
+            </p>
+         </div>
+  </div>
+</body>
+</html>
